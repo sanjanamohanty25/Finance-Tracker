@@ -1,3 +1,5 @@
+import REPOSITORY.perDayExpenseDetailsRepo as perDayExpenseDetailsRepo
+
 itemAmountMap = {}
 
 def addItemsToExpenditure(itemsToBeAdded):
@@ -15,7 +17,9 @@ def addItemsToExpenditure(itemsToBeAdded):
         
         itemName = input("Enter the item spent on: ").strip()
       
-        itemAmountMap[itemName] = amountSpentToday
+        # itemAmountMap[itemName] = amountSpentToday
+        perDayExpenseDetailsRepo.insert(itemName, amountSpentToday)
+        
         moreItem = input("Do you want to add more expenses? Y/N \n").strip().lower()
         
         if moreItem == "y":
@@ -47,5 +51,4 @@ def checkExpenditure():
         addItemsToExpenditure(itemsToBeAdded)
 
     return itemAmountMap
-
 
