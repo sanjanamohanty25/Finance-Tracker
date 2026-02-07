@@ -24,8 +24,8 @@ def runTestCode():
     #perDayAllowance = dw.calculatePerDayExpenditure(monthlyBudget)
     print(f"Your per day allowance is {dw.calculatePerDayExpenditure(monthlyBudget)}")
 
-    itemAmountMap = ep.checkExpenditure()
-    print(tabulate(itemAmountMap.items(), headers= ["Item Name", "Amount"], tablefmt="grid"))
+    # itemAmountMap = ep.checkExpenditure()
+    # print(tabulate(itemAmountMap.items(), headers= ["Item Name", "Amount"], tablefmt="grid"))
 
     totalExpenditureToday = sum(itemAmountMap.values())
     print(f"Your total expenditure for the day is {totalExpenditureToday}")
