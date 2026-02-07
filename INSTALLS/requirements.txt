@@ -1,0 +1,9 @@
+# To install packages, use the following command: 
+# tabulate -> for pretty printing tables
+tabulate
+# dateTime -> for date and time operations
+datetime
+# Calender -> for calendar operations
+calendar
+# mysql-connector-python -> for mysql database operations
+mysql-connector-python
