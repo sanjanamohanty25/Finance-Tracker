@@ -9,4 +9,5 @@ print(per_day)
 import day_wise as dw
 dw.day_wise(3000)
 
-
+def calculate(a):
+    return sum(a)

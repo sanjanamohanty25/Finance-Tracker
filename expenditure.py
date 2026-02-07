@@ -46,8 +46,6 @@ def checkExpenditure():
         expend = input("Please input either 'Y' or 'N' \n ").strip().lower()
         addItemsToExpenditure(itemsToBeAdded)
 
-
-
     return itemAmountMap
 
 
